@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;Expense Tracker&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: Arial;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #111;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>justify-content: space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: #00c853;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.main-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 100px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 20px 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.step {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>input, select {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 80%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-top: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;header&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="alert('Static Mode')"&gt;💳 Payment Mode&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="alert('Static Users')"&gt;👤 Add User&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;button class="main-btn" onclick="startFlow()"&gt;Track Expense&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="step1" class="step"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Enter Amount&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;input id="amount" type="number"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;br&gt;&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="next(2)"&gt;Next&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="step2" class="step"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Reason&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;select id="reason"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Food&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Tea&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option value="custom"&gt;Other&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;input id="customReason" placeholder="Enter reason" style="display:none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;br&gt;&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="next(3)"&gt;Next&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="step3" class="step"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Location&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="getLocation()"&gt;Use Location&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p id="locationText"&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="next(4)"&gt;Next&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="step4" class="step"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Payment Mode&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;select id="paymentMode"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Cash&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;UPI&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Card&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;br&gt;&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="next(5)"&gt;Next&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="step5" class="step"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Payer&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;select id="payer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Anbu&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Surya&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Babu&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Selva&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Kumar&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Vicky&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;br&gt;&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="next(6)"&gt;Next&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="step6" class="step"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Beneficiaries&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;select id="beneficiers" multiple&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Anbu&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Surya&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Babu&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Selva&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Kumar&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;option&gt;Vicky&lt;/option&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/select&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;br&gt;&lt;br&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button onclick="submitData()"&gt;Submit&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">let locationValue = "";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function startFlow() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.querySelector('.main-btn').style.display = "none";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('step1').style.display = "block";</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function next(step) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.querySelectorAll('.step').forEach(s =&gt; s.style.display = "none");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('step' + step).style.display = "block";</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">document.getElementById('reason').addEventListener('change', function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('customReason').style.display =</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>this.value === 'custom' ? 'block' : 'none';</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function getLocation() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>navigator.geolocation.getCurrentPosition(pos =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>locationValue = pos.coords.latitude + "," + pos.coords.longitude;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById("locationText").innerText = locationValue;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function submitData() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const amount = document.getElementById('amount').value;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>let reason = document.getElementById('reason').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (reason === 'custom') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>reason = document.getElementById('customReason').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const paymentMode = document.getElementById('paymentMode').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const payer = document.getElementById('payer').value;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const beneficiaries = Array.from(</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('beneficiers').selectedOptions</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>).map(o =&gt; o.value);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const payload = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>amount,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>reason,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>location: locationValue,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>paymentMode,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>payer,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>beneficiaries: beneficiaries.join(",")</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>fetch("PASTE_YOUR_SCRIPT_URL_HERE", {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>method: "POST",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body: JSON.stringify(payload)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>})</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.then(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>alert("Saved ✅");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>location.reload();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
